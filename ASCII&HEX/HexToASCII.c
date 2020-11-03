@@ -14,8 +14,8 @@ char copy;
    int i;
    while( ( copy = fgetc(fpt) ) != EOF )
    {
-      fprintf(fpt2, "%02X ", copy)  putc('\n', stdout);
-      if( !(++i % 16) ) 
+      fprintf(fpt2, "%02X ", copy);
+      if( !(++i % 16) )  putc('\n', stdout);
    }
    fclose(fpt);
    fclose(fpt2);
