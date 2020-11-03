@@ -9,7 +9,7 @@ int main(){
     fpt2 = fopen("hex.txt", "w");
 char copy;
 while((copy = fgetc(fpt)) != EOF)
-fprintf(fpt2, "%02X ", copy);
+fprintf(fpt2, "0x%02X ", copy);
     fclose(fpt);
     fclose(fpt2);
 return 0;
